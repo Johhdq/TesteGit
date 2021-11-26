@@ -7,9 +7,13 @@ namespace TesteGit
         static void Main(string[] args)
         {
             Console.WriteLine("Bem-vindo ao projeto de teste do Git!!");
-            Console.WriteLine("Bom dia!!!");
 
-            Console.WriteLine("TABUADA!");
+            Console.Write("\nQual o seu nome? ");
+
+            string nome = Console.ReadLine();
+            Console.WriteLine($"Bom dia {nome}!!!");
+
+            Console.WriteLine("\nTABUADA!");
             Console.Write("\nTabuada do? ");
 
             int tabuada = int.Parse(Console.ReadLine());
