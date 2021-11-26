@@ -12,6 +12,7 @@ namespace TesteGit
 
             Console.WriteLine("TABUADA!");
             Console.Write("\nTabuada do? ");
+
             int tabuada = int.Parse(Console.ReadLine());
             
             if (tabuada >= 1 && tabuada <= 10)
@@ -25,9 +26,10 @@ namespace TesteGit
             {
                 throw new ArgumentException("Error: Tabuada inválida!");
             }
+            Console.Write("\nComo você esta? ");
+            string resposta = Console.ReadLine();
 
-
-
+            Console.WriteLine($"Você está {resposta}");
         }
     }
 }
