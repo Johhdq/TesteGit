@@ -30,6 +30,7 @@ namespace TesteGit
             string resposta = Console.ReadLine();
 
             Console.WriteLine($"Você está {resposta}");
+            Console.WriteLine("Obrigado pela sua resposta!");
         }
     }
 }
