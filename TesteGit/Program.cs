@@ -6,11 +6,18 @@ namespace TesteGit
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             Console.WriteLine("Bem-vindo ao projeto de teste do Git!!");
-            Console.WriteLine("Bom dia!!!");
 
-            Console.WriteLine("TABUADA!");
+            Console.Write("\nQual o seu nome? ");
+            string nome = Console.ReadLine();
+
+            Console.Write("Qual a sua idade? ");
+            int idade = int.Parse(Console.ReadLine());
+
+            Console.WriteLine($"\nBom dia {nome}!!!");
+            Console.WriteLine($"{nome} você tem {idade} anos de idade!!!");
+
+            Console.WriteLine("\nTABUADA!");
             Console.Write("\nTabuada do? ");
 
             int tabuada = int.Parse(Console.ReadLine());
@@ -29,7 +36,7 @@ namespace TesteGit
             Console.Write("\nComo você esta? ");
             string resposta = Console.ReadLine();
 
-            Console.WriteLine($"Você está {resposta}");
+            Console.WriteLine($"\nVocê está {resposta} hoje");
             Console.WriteLine("Obrigado pela sua resposta!");
         }
     }
