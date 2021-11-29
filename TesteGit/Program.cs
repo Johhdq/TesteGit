@@ -9,9 +9,13 @@ namespace TesteGit
             Console.WriteLine("Bem-vindo ao projeto de teste do Git!!");
 
             Console.Write("\nQual o seu nome? ");
-
             string nome = Console.ReadLine();
-            Console.WriteLine($"Bom dia {nome}!!!");
+
+            Console.Write("Qual a sua idade? ");
+            int idade = int.Parse(Console.ReadLine());
+
+            Console.WriteLine($"\nBom dia {nome}!!!");
+            Console.WriteLine($"{nome} você tem {idade} anos de idade!!!");
 
             Console.WriteLine("\nTABUADA!");
             Console.Write("\nTabuada do? ");
@@ -32,7 +36,7 @@ namespace TesteGit
             Console.Write("\nComo você esta? ");
             string resposta = Console.ReadLine();
 
-            Console.WriteLine($"Você está {resposta}");
+            Console.WriteLine($"\nVocê está {resposta} hoje");
             Console.WriteLine("Obrigado pela sua resposta!");
         }
     }
